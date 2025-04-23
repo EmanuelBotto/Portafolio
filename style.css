@@ -1,6 +1,155 @@
+<<<<<<< HEAD
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #121212;
+  font-family: "roboto", sans-serif;
+}
+
+.contenedor-principal {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #111;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Contenedor principal centrado */
+.contenedor-principal {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Encabezado de navegación */
+header {
+  background-color: #111;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  color: #f0a500;
+}
+
+/* Estilo general para secciones */
+section {
+  margin: 60px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #f0a500;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Lista de lenguajes */
+ul ul {
+  padding-left: 20px;
+}
+
+.list1 {
+  font-weight: bold;
+  color: #f0a500;
+}
+
+/* Tabla de proyectos */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f0a500;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+/* Enlace de correo */
+a[href^="mailto"] {
+  color: #f0a500;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #f0a500;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+footer ul li {
+  margin: 5px 0;
+}
+=======
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+>>>>>>> 15e342b3d17ab0b131631f36c83274f9d514dfc8
