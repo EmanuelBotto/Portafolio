@@ -1,155 +1,308 @@
-<<<<<<< HEAD
 /* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #121212;
-  font-family: "roboto", sans-serif;
 }
 
-.contenedor-principal {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
-  color: #111;
-  line-height: 1.6;
-  padding: 0;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/Imagenes/contenedor-principal.jpg); /* imagen fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 5%; /* espacio desde el borde izquierdo */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: transparent;
+  border: none; /* Asegura que no haya borde */
+  box-shadow: none; /* Elimina cualquier sombra que pueda estar afectando el fondo */
+  pointer-events: none; /* Asegura que no haya interacción */
+}
+
+.contenido-hero {
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  padding: 40px 60px;
+  border-radius: 20px;
+  max-width: 800px;
+}
+
+.nombre {
+  font-weight: bold;
+  font-family: "Bebas Neue", serif;
+}
+.apellido {
+  font-size: 195px;
+  font-weight: bold;
+  font-family: "Anton", serif;
+  letter-spacing: 10px;
+  margin-bottom: 15px;
+}
+.marco-nombre h2 {
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
+.marco-apellido {
+  background-color: transparent;
+  padding: 5px 5px;
+  display: inline-block;
   margin: 0;
 }
-
-/* Contenedor principal centrado */
-.contenedor-principal {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
+/* Fuente de letra gregada */
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+/* Fuente de letra gregada */
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+/* Ajusta la distancia entre los elementos */
+.contenido-hero > .marco-nombre,
+.contenido-hero > .marco-apellido {
+  margin-bottom: -50px; /* Ajusta la distancia entre los elementos */
 }
 
-/* Encabezado de navegación */
-header {
-  background-color: #111;
-  padding: 20px 0;
+/* Barra de navegación fija */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 20px 20px;
+  z-index: 1000; /* Asegura que esté siempre encima */
 }
 
-nav ul {
+.navbar nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-nav ul li a:hover {
-  color: #f0a500;
-}
-
-/* Estilo general para secciones */
-section {
-  margin: 60px 0;
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #111;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #f0a500;
-}
-
-p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  display: block;
-  margin: 20px auto;
-}
-
-/* Lista de lenguajes */
-ul ul {
-  padding-left: 20px;
-}
-
-.list1 {
-  font-weight: bold;
-  color: #f0a500;
-}
-
-/* Tabla de proyectos */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-size: 1rem;
-}
-
-table,
-th,
-td {
-  border: 1px solid #ccc;
-}
-
-th {
-  background-color: #f0a500;
-  color: white;
-  padding: 10px;
-}
-
-td {
-  padding: 10px;
-}
-
-/* Enlace de correo */
-a[href^="mailto"] {
-  color: #f0a500;
-  font-weight: bold;
-}
-
-/* Footer */
-footer {
-  background-color: #111;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-  margin-top: 40px;
-}
-
-footer a {
-  color: #f0a500;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer ul {
-  list-style: none;
-  padding: 10px 0;
-}
-
-footer ul li {
-  margin: 5px 0;
-}
-=======
-* {
+  justify-content: right;
+  align-items: center;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
->>>>>>> 15e342b3d17ab0b131631f36c83274f9d514dfc8
+
+.navbar nav ul li {
+  margin: 0 20px; /* Espaciado entre botones */
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: grey;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover para los botones */
+.navbar nav ul li a:hover {
+  color: #515155; /* Color al pasar el ratón */
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Configuracion Sobre mi */
+.sobre-mi {
+  padding: 300px 5%;
+  background-color: #121212;
+  color: white;
+}
+
+.contenido-sobre-mi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* Para que se acomode en pantallas chicas */
+}
+
+.texto-sobre-mi {
+  flex: 1;
+  min-width: 280px;
+}
+
+.texto-sobre-mi h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.texto-sobre-mi p {
+  font-size: 25px;
+  line-height: 1.6;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.imagen-sobre-mi {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+
+.imagen-sobre-mi img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+/* Configuracion de Proyectos */
+.proyectos {
+  padding: 80px 10%;
+  background-color: #121212;
+  color: white;
+}
+
+.proyectos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+}
+
+/* Contenedor general */
+.proyectos-contenedor {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cada tarjeta de proyecto */
+.proyecto {
+  display: flex;
+  flex-direction: column; /* texto arriba,imagen */
+  align-items: center;
+  width: 450px;
+  height: auto;
+  gap: 10px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.proyecto img {
+  width: 100%;
+  height: 295px; /* Ajustá este valor a tu gusto */
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  max-width: 1080px;
+}
+
+/*.proyecto img:hover {transform: scale(1.05); /* Levemente más grande */
+
+.detalle-proyecto h3 {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.detalle-proyecto p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* contacto */
+.contacto {
+  padding: 80px 10%;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.contacto-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contacto-item {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.contacto-item a {
+  color: #00bfff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contacto-item a:hover {
+  color: #00ffff;
+}
+/* Footer */
+.footer {
+  background-color: #0d0d0d;
+  color: white;
+  padding: 30px 10%;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.footer-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-redes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-redes a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-redes a:hover {
+  color: #00ffff;
+}

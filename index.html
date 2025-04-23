@@ -1,199 +1,152 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emanuel Botto - Portafolio</title>
+    <!-- Funtes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Inconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="contenedor-principal">
-      <!-- Portada -->
-      <section class="portada">
-        <h1>EMANUEL <span>BOTTO</span></h1>
-        <p>Desarrollador de software</p>
-        <p class="ubicacion">Esperanza, Santa Fe - 25 años</p>
-      </section>
+    <header class="navbar">
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mi</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- Sobre mí -->
-      <section class="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>
-          Hola, soy Emanuel Botto, estudiante de desarrollo de software en el
-          instituto tecnológico El Molino (ITEC). Me apasiona la programación y
-          la tecnología. Actualmente trabajo como modelador 3D en una
-          metalúrgica local (FERMA).
-        </p>
-      </section>
+    <!-- Portada -->
+    <section id="inicio" class="hero">
+      <div class="overlay"></div>
+      <div class="contenido-hero">
+        <div class="marco-nombre">
+          <h2>EMANUEL</h2>
+        </div>
+        <div class="marco-apellido">
+          <h1 class="apellido">BOTTO</h1>
+        </div>
+      </div>
+    </section>
 
-      <!-- Proyectos -->
-      <section class="proyectos">
-        <h2>Proyectos</h2>
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="sobre-mi">
+      <div class="contenido-sobre-mi">
+        <div class="imagen-sobre-mi">
+          <img src="/Imagenes/emanuel_botto.jpeg" alt="Foto de perfil" />
+        </div>
+        <div class="texto-sobre-mi">
+          <h2>Sobre mí</h2>
+          <p>
+            Hola, soy Emanuel Botto, desarrollador de software, soy de la ciudad
+            de Esperanza Santa Fe, tengo 25 años y estoy estudiando la carrera
+            de desarrollador de software. En estos momentos estoy trabajando
+            como Modelador 3D para una metalurgica de la localidad.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos">
+      <h2>Proyectos</h2>
+
+      <div class="proyectos-contenedor detalle-proyecto">
         <div class="proyecto">
           <h3>GYM BRO</h3>
+          <img src="/Imagenes/Gym-bro.jpg" alt="Proyecto GYM BRO" />
           <p>
             App de escritorio en Python. Gestión de clientes y clases en un
             gimnasio.
           </p>
         </div>
-        <div class="proyecto">
+
+        <div class="proyecto detalle-proyecto">
           <h3>Portafolio Web</h3>
+          <img
+            src="/Imagenes/Proyecto - Protafolio.png"
+            alt="Proyecto Portafolio Web"
+          />
           <p>
             Mi sitio personal con proyectos, contacto y presentación
             profesional.
           </p>
         </div>
-        <div class="proyecto">
+
+        <div class="proyecto detalle-proyecto">
           <h3>El Ceibo</h3>
+          <img src="/Imagenes/El-Ceibo.png" alt="Proyecto El Ceibo" />
           <p>
             App web para gestión veterinaria: ventas, pacientes y sucursales.
           </p>
         </div>
-      </section>
-
-      <!-- Contacto -->
-      <section class="contacto">
-        <h2>Contacto</h2>
-        <ul>
-          <li>
-            Email:
-            <a href="mailto:emanuelbotto13@gmail.com"
-              >emanuelbotto13@gmail.com</a
-            >
-          </li>
-          <li>Teléfono: 3496-413383</li>
-          <li>
-            Instagram:
-            <a href="https://instagram.com/emanuelbotto" target="_blank"
-              >@emanuelbotto</a
-            >
-          </li>
-          <li>
-            GitHub:
-            <a href="https://github.com/emanuelbotto" target="_blank"
-              >EmanuelBotto</a
-            >
-          </li>
-          <li>
-            LinkedIn:
-            <a
-              href="https://linkedin.com/in/emanuel-botto-376b37152"
-              target="_blank"
-              >Emanuel Botto</a
-            >
-          </li>
-        </ul>
-      </section>
-
-      <!-- Footer -->
-      <footer>
-        <p>&copy; 2025 Emanuel Botto. Todos los derechos reservados.</p>
-      </footer>
+      </div>
     </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <div class="contacto-lista">
+        <div class="contacto-item">
+          <span>Email:</span>
+          <a href="mailto:emanuelbotto13@gmail.com">emanuelbotto13@gmail.com</a>
+        </div>
+        <div class="contacto-item">
+          <span>Teléfono:</span>
+          <p>3496-413383</p>
+        </div>
+        <div class="contacto-item">
+          <span>Instagram:</span>
+          <a href="https://instagram.com/emanuelbotto" target="_blank"
+            >@emanuelbotto</a
+          >
+        </div>
+        <div class="contacto-item">
+          <span>GitHub:</span>
+          <a href="https://github.com/emanuelbotto" target="_blank"
+            >EmanuelBotto</a
+          >
+        </div>
+        <div class="contacto-item">
+          <span>LinkedIn:</span>
+          <a
+            href="https://linkedin.com/in/emanuel-botto-376b37152"
+            target="_blank"
+            >Emanuel Botto</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-contenido">
+        <p>&copy; 2025 Emanuel Botto. Todos los derechos reservados.</p>
+        <div class="footer-redes">
+          <a href="https://github.com/emanuelbotto" target="_blank">GitHub</a>
+          <a
+            href="https://linkedin.com/in/emanuel-botto-376b37152"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="emanuelbotto13@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="es">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Precentacion</title>
-  </head>
-  
-  <!-- Seccion de portafolio -->
-   
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#sobre-mi">Sobre mi</a></li>
-        <li><a href="#portafolios">Portafolios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  <body>
-    <h1>Hola, soy Emanuel Botto</h1>
-    <p>Bienvenido a mi portafolio personal</p>
-    <img src="https://via.placeholder.com/150" alt="Foto de perfil" />
-    <p>Este es un ejemplo de un portafolio personal creado con HTML y CSS.</p>
-  </body>
-
-  <!-- Seccion de sobre mi -->
-
-  <section id="sobre-mi">
-    <h1>Sobre mi</h1>
-    <p>
-      Hola, soy Emanuel Botto, tengo 25 años y soy de Esperanza Santa Fe. Estoy
-      estudiando la carrera de desarrollador de software en el instituto
-      tecnologico el molino (ITEC). Me gusta mucho la programacion y la
-      tecnologia en general. En estos momentos estoy trabajando en una empresa
-      metalurgica, FERMA, en la parte de modelado 3D y diseño de piezas.
-    </p>
-    <ul>
-      Lenguajes de programacion que manejo:
-      <ul>
-        <li class="list1" >HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>SQL</li>
-        <li>C++</li>  
-      </ul>
-      
-  </section>
-
-  <!-- Seccion de portafolio -->
-
-  <section id="portafolios">
-    <h1>Portafolios</h1>
-    <p>
-      A continuacion se presentan algunos de mis proyectos realizados en la
-      carrera:
-    </p>
-    <table>
-      <tr>
-        <th>Proyecto</th>
-        <th>Descripcion</th>
-      </tr>
-      <tr>
-        <td>Proyecto 1</td>
-        <td>Descripcion del proyecto 1</td>
-      </tr>
-      <tr>
-        <td>Proyecto 2</td>
-        <td>Descripcion del proyecto 2</td>
-      </tr>
-      <tr>
-        <td>Proyecto 3</td>
-        <td>Descripcion del proyecto 3</td>
-      </tr>
-    </table>
-  </section>
-  <section id="contacto">
-    <h1>Contacto</h1>
-    <p>Si deseas contactarme, puedes enviarme un correo a:</p>
-    <a href="mailto:emanuelbotto13@gmail.com">emanuelbotto13@gmail.com</a>
-  </section>
-
-  <!-- Footere de la pagina -->
-
-  <footer id="contacto">
-    <h2>Contacto</h2>
-    <p>Si deseas contactarme, puedes enviarme un correo a:</p>
-    <a href="mailto:emanuelbotto13@gmail.com">emanuelbotto13@gmail.com</a>
-    <p>O seguirme en mis redes sociales:</p>
-    <ul>
-      <li><a href="www.linkedin.com/in/emanuel-botto-376b37152">LinkedIn</a></li>
-      <li><a href="www.github.com/emanuelbotto">GitHub</a></li>
-      <li><a href="www.instagram.com/emanuelbotto">Instagram</a></li> 
-    </ul>
-    <p>&copy; 2025 Emanuel Botto. Todos los derechos reservados.</p> 
-  </footer>
-
-</html>
->>>>>>> 15e342b3d17ab0b131631f36c83274f9d514dfc8
